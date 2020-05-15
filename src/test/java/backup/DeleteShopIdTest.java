@@ -27,6 +27,6 @@ public class DeleteShopIdTest {
     public void name() {
 
         //deleteShop(id), brisanje postojećeg objekta iz tabele
-        System.out.println(carry.deleteShop(3));
+        System.out.println(carry.deleteShop(1));
     }
 }

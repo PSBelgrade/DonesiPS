@@ -1,6 +1,7 @@
 package backup;
 
 import classes.CarryImpl;
+import dto.Dish;
 import dto.Shop;
 import interfaces.Carry;
 import org.junit.After;
@@ -25,39 +26,39 @@ public class InsertTest {
         carry.close();
     }
 
-//    @Test
-//    //ubacivanje jela u tabelu Dish
-//    public void insertDish() throws SQLException {
-//
-//        Dish dish = new Dish();
-//        dish.setDishname("pizza1");
-//        dish.setPrice(80);
-//        dish.setQuantity(50);
-////        dish.setId(2);
-//
-//        System.out.println(carry.insertDish(dish).getId());
-//    }
-
-
     @Test
-    public void name() throws SQLException {
+    //ubacivanje jela u tabelu Dish
+    public void insertDish() throws SQLException {
 
-        Shop shop = new Shop();
+        Dish dish = new Dish();
+        dish.setDishname("pizza1");
+        dish.setPrice(80);
+        dish.setQuantity(50);
+//        dish.setId(2);
 
-        shop.setAccount("99999");
-        shop.setPhone("12345");
-        shop.setNameWork("Kafana");
-        shop.setAddress("Miljakovac2");
-        //newShop.setId(13);
-
-        //insertShop(Shops), ubacivanje novog objekta u tabelu
-        carry.insertShop(shop);
-        System.out.println("Shop: ID = " + shop.getId() + ", " +
-            "ACCOUNT = " + shop.getAccount() + ", " +
-            "PHONE = " + shop.getPhone() + ", " +
-            "NAMEWORK = " + shop.getNameWork() + ", " +
-            "ADDRESS = " + shop.getAddress());
+        System.out.println(carry.insertDish(dish).getId());
     }}
+
+//    @Test
+//    public void name() throws SQLException {
+//
+//        Shop shop = new Shop();
+//
+//        shop.setAccount("88888");
+//        shop.setPhone("12345");
+//        shop.setNameWork("FreshPizza");
+//        shop.setAddress("Miljakovac3");
+//        //newShop.setId(13);
+//
+//        //insertShop(Shops), ubacivanje novog objekta u tabelu
+//        carry.insertShop(shop);
+//        System.out.println("Shop: ID = " + shop.getId() + ", " +
+//            "ACCOUNT = " + shop.getAccount() + ", " +
+//            "PHONE = " + shop.getPhone() + ", " +
+//            "NAMEWORK = " + shop.getNameWork() + ", " +
+//            "ADDRESS = " + shop.getAddress());
+//
+//    }}
 
 //    @Test
 //    public void insert2Test() throws SQLException{

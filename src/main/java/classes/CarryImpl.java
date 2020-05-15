@@ -49,7 +49,7 @@ public class CarryImpl implements Carry {
     String updateShop2 = "update shops2 t set t.account=? where t.id=?";
 
     //DELETE Shops
-    String deleteShop = "delete from shops t where t.id=?";
+    String deleteShop = "delete from shops where id=?";
 
     //Search Shops WHERE account=? OR phone=? OR workname=? OR address=?
     String search = "select t.id, t.account, t.phone, t.workname, t.address from shops t " +
@@ -499,12 +499,8 @@ public class CarryImpl implements Carry {
     public boolean deleteShop(int id) {
 
         try {
-//            deleteShop.setString(1, shop.getAccount());
-//            deleteShop.setString(2, shop.getPhone());
-//            deleteShop.setString(3, shop.getNameWork());
-//            deleteShop.setString(4, shop.getAddress());
             deleteShopLink.setInt(1, id);
-            deleteShopLink.executeQuery();
+            deleteShopLink.execute();
             return true;
 
         } catch (SQLException e) {
@@ -533,7 +529,7 @@ public class CarryImpl implements Carry {
                 shop.setId(results.getInt("ID"));
                 shop.setAccount(results.getString("ACCOUNT"));
                 shop.setPhone(results.getString("PHONE"));
-                shop.setNameWork(results.getString("NAMEWORK"));
+                shop.setNameWork(results.getString("WORKNAME"));
                 shop.setAddress(results.getString("ADDRESS"));
                 shopList.add(shop);
             }

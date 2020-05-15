@@ -33,8 +33,7 @@ public class updateShop {
         shop.setPhone("062111111");
         shop.setNameWork("Restoran");
         shop.setAddress("Autokomanda");
-        shop.setId(2);
-
+        shop.setId(3);
         carry.updateShop(shop);
     }
 }

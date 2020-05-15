@@ -29,10 +29,10 @@ public class GetShopIdtest {
 
         //getShops(id), uzeti shop iz tabele
         //getShops(account), uzeti shop iz tabele
-        Shop shop = carry.getShop(2);
+        Shop shop = carry.getShop(3);
         if (shop.getId() == null) {
             System.out.println("No shop!");
-            return;
+
         } else {
 
             System.out.println("Shop: ID = " + shop.getId() + ", " +

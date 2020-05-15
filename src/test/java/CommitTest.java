@@ -18,7 +18,6 @@ public class CommitTest {
     @Before
     public void open() throws SQLException {
         System.out.println("open " + carry.open());
-
     }
 
     //after close connection
@@ -32,17 +31,17 @@ public class CommitTest {
     public void insertShop2() throws SQLException {
 
         List<Dish> dishList = new ArrayList<>();
-        Dish dish1 = new Dish();
-        dish1.setDishname("jelo2");
-        dish1.setPrice(55);
-        dish1.setQuantity(68);
-        dishList.add(dish1);
+//        Dish dish1 = new Dish();
+//        dish1.setDishname("jelo2");
+//        dish1.setPrice(55);
+//        dish1.setQuantity(68);
+//        dishList.add(dish1);
 
-//        Dish dish2 = new Dish();
-//        dish2.setName("jelo2");
-//        dish2.setPrice(555);
-//        dish2.setQuantity(666);
-//        dishList.add(dish2);
+        Dish dish2 = new Dish();
+        dish2.setDishname("jelo3");
+        dish2.setPrice(555);
+        dish2.setQuantity(666);
+        dishList.add(dish2);
 
 
         Shop2 shop2 = new Shop2();

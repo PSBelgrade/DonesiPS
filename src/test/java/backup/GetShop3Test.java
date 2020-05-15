@@ -33,7 +33,7 @@ public class GetShop3Test {
         System.out.println("Shop: ID = " + shop.getId() + ", " +
                 "ACCOUNT = " + shop.getAccount() + ", " +
                 "PHONE = " + shop.getPhone() + ", " +
-                "NAMEWORK = " + shop.getNamework() + ", " +
+                "WORKNAME = " + shop.getNamework() + ", " +
                 "ADDRESS = " + shop.getAddress() + "  " + shop.getDishId());
 
         for (Dish dish : shop.getMenu())

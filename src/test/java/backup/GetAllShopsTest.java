@@ -47,7 +47,7 @@ public class GetAllShopsTest {
             System.out.println("Shop: ID = " + shop.getId() + ", " +
                 "ACCOUNT = " + shop.getAccount() + ", " +
                 "PHONE = " + shop.getPhone() + ", " +
-                "NAMEWORK = " + shop.getNameWork() + ", " +
+                "WORKNAME = " + shop.getNameWork() + ", " +
                 "ADDRESS = " + shop.getAddress());
     }
 }

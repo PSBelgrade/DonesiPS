@@ -32,7 +32,7 @@ public class SearchShopTest {
         //serachShop(filter), pretraga objekta po određenom kriterijumu
         ShopFilter filter = new ShopFilter();
 
-        filter.setAddress("Miljakovac1");
+        filter.setAddress("Miljakovac2");
         //filter.setNameWork("Restoran");
 
         List<Shop> shopList = carry.searchShops(filter);
@@ -44,7 +44,7 @@ public class SearchShopTest {
             System.out.println("Shop: ID = " + shop.getId() + ", " +
                 "ACCOUNT = " + shop.getAccount() + ", " +
                 "PHONE = " + shop.getPhone() + ", " +
-                "NAMEWORK = " + shop.getNameWork() + ", " +
+                "WORKNAME = " + shop.getNameWork() + ", " +
                 "ADDRESS = " + shop.getAddress());
         }
     }
